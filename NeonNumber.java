@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 class NeonNumber {
-    // Method to check if a number is a Neon Number
+     
     public boolean isNeonNumber(int number) {
         int square = number * number;
         int sumOfDigits = 0;
 
-        // Calculate the sum of digits of the square of the number
+        
         while (square > 0) {
-            sumOfDigits += square % 10; // Add the last digit to sum
-            square /= 10;               // Remove the last digit
+            sumOfDigits += square % 10;  
+            square /= 10;                
         }
 
-        // Check if the sum of digits equals the original number
+         
         return sumOfDigits == number;
     }
 
